@@ -1,0 +1,228 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+}
+
+.header {
+  background: var(--color-neutral-1);
+  border-bottom: 1px solid var(--color-neutral-6);
+  padding: var(--space-4) var(--space-6);
+  box-shadow: var(--shadow-2);
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font: var(--font-heading);
+  color: var(--color-accent-9);
+  text-decoration: none;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-accent-9);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.userName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-neutral-11);
+  padding: 0 var(--space-2);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: var(--space-8);
+  padding: var(--space-8) var(--space-4);
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-4);
+  box-shadow: var(--shadow-3);
+}
+
+.heroTitle {
+  font: var(--font-display);
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-4) 0;
+  letter-spacing: var(--font-letterspacing-0);
+}
+
+.heroSubtitle {
+  font: var(--font-subheading);
+  color: var(--color-neutral-11);
+  margin: 0 0 var(--space-6) 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section {
+  margin-bottom: var(--space-8);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+}
+
+.sectionTitle {
+  font: var(--font-heading);
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.requestsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-4);
+}
+
+.requestCard {
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-2);
+  transition:
+    transform 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.requestCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3);
+}
+
+.requestHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+  gap: var(--space-3);
+}
+
+.requestId {
+  font-weight: 600;
+  color: var(--color-accent-9);
+  font-size: var(--font-size-1);
+}
+
+.requestType {
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-11);
+  margin-bottom: var(--space-2);
+  text-transform: capitalize;
+}
+
+.requestDescription {
+  color: var(--color-neutral-12);
+  font-size: var(--font-size-1);
+  margin-bottom: var(--space-4);
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.requestFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: auto;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-neutral-4);
+}
+
+.requestMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-0);
+  color: var(--color-neutral-10);
+}
+
+.metaIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: var(--space-8);
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-2);
+}
+
+.emptyIcon {
+  width: 64px;
+  height: 64px;
+  color: var(--color-neutral-8);
+  margin: 0 auto var(--space-4);
+}
+
+.emptyTitle {
+  font: var(--font-heading);
+  color: var(--color-neutral-11);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.emptyText {
+  color: var(--color-neutral-10);
+  margin: 0 0 var(--space-5) 0;
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .nav {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-5);
+  }
+
+  .requestsGrid {
+    grid-template-columns: 1fr;
+  }
+}

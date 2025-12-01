@@ -1,0 +1,130 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-accent-2) 0%, var(--color-accent-3) 100%);
+  padding: var(--space-4);
+}
+
+.content {
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent-11);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-2);
+  transition: all 0.2s ease;
+}
+
+.homeLink:hover {
+  background: var(--color-neutral-2);
+  transform: translateX(-4px);
+}
+
+.card {
+  padding: var(--space-7);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.header h1 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-2);
+}
+
+.header p {
+  color: var(--color-neutral-11);
+  font-size: 0.875rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.submitButton {
+  margin-top: var(--space-2);
+}
+
+.footer {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--color-neutral-6);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.875rem;
+  color: var(--color-neutral-11);
+}
+
+.footer a {
+  color: var(--color-accent-11);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.demoCredentials {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-accent-2);
+  border-radius: var(--radius-2);
+  border: 1px solid var(--color-accent-6);
+}
+
+.demoCredentials h4 {
+  font-family: var(--font-subheading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent-11);
+  margin-bottom: var(--space-3);
+}
+
+.demoGrid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.demoGrid > div {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.demoGrid strong {
+  display: block;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-1);
+}
+
+.demoGrid div {
+  color: var(--color-neutral-11);
+}

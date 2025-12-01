@@ -1,0 +1,131 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-neutral-2);
+}
+
+.header {
+  background: var(--color-neutral-1);
+  border-bottom: 1px solid var(--color-neutral-6);
+  padding: var(--space-4) var(--space-6);
+  box-shadow: var(--shadow-2);
+}
+
+.headerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.headerTitle {
+  font: var(--font-heading);
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.statCard {
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-2);
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.statLabel {
+  font-size: var(--font-size-1);
+  color: var(--color-neutral-11);
+  font-weight: 500;
+}
+
+.statIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-neutral-9);
+}
+
+.statValue {
+  font-size: var(--font-size-5);
+  font-weight: 700;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.filters {
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-2);
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filterLabel {
+  font-weight: 600;
+  color: var(--color-neutral-11);
+}
+
+.tableContainer {
+  background: var(--color-neutral-1);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+}
+
+.tableRow {
+  cursor: pointer;
+  transition: background-color 0.2s var(--ease-out);
+}
+
+.tableRow:hover {
+  background-color: var(--color-neutral-2);
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .headerLeft {
+    width: 100%;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
